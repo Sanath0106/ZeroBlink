@@ -1,7 +1,7 @@
 import sansynImg from '../assets/sansyn.png';
 import detectiveImg from '../assets/detective.png';
 import npmImg from '../assets/npm.png';
-import ac3Img from '../assets/x23_D_ACE.png';
+import ac3Img from '../assets/x23_D_AC3.png';
 import cheriImg from '../assets/cheri.png';
 
 const WantedCard = ({ name, role, image, bounty, isRoot, isRed }) => (
