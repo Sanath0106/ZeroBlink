@@ -124,8 +124,18 @@ const Hero = () => {
               background: 'transparent',
               cursor: 'pointer',
               fontFamily: 'var(--font-mono)',
+              transition: 'all 0.3s ease',
             }}
-            className="glitch-hover"
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = 'var(--accent-color)';
+              e.target.style.color = '#000';
+              e.target.style.boxShadow = '0 0 20px var(--accent-color)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = 'transparent';
+              e.target.style.color = 'var(--accent-color)';
+              e.target.style.boxShadow = 'none';
+            }}
           >
             Enter System
           </button>
