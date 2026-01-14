@@ -1,7 +1,7 @@
 import sansynImg from '../assets/sansyn.png';
 import detectiveImg from '../assets/detective.png';
 import npmImg from '../assets/npm.png';
-import ac3Img from '../assets/AC3@0b10111.png';
+import ac3Img from '../assets/x23_D_ACE.png';
 import cheriImg from '../assets/cheri.png';
 
 const WantedCard = ({ name, role, image, bounty, isRoot, isRed }) => (
@@ -116,7 +116,7 @@ const Team = () => {
           <WantedCard name="Detective M" role="FORENSICS / INTEL" image={detectiveImg} isRed={true} />
         </div>
 
-        {/* Second Row - npm_rn_dev, AC3@0b10111, cheri */}
+        {/* Second Row - npm_rn_dev, Ace, cheri */}
         <div
           style={{
             display: 'flex',
@@ -128,7 +128,7 @@ const Team = () => {
           }}
         >
           <WantedCard name="npm_rn_dev" role="EXPLOIT / REVERSE ENG" image={npmImg} />
-          <WantedCard name="AC3@0b10111" role="CRYPTO / FORENSICS" image={ac3Img} />
+          <WantedCard name="x23 D AC3" role="CRYPTO / FORENSICS" image={ac3Img} />
           <WantedCard name="cheriCoder" role="WEB / OSINT" image={cheriImg} />
         </div>
       </div>
