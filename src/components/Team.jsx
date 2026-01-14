@@ -129,7 +129,7 @@ const Team = () => {
         >
           <WantedCard name="npm_rn_dev" role="EXPLOIT / REVERSE ENG" image={npmImg} />
           <WantedCard name="AC3@0b10111" role="CRYPTO / FORENSICS" image={ac3Img} />
-          <WantedCard name="cheri" role="WEB / OSINT" image={cheriImg} />
+          <WantedCard name="cheriCoder" role="WEB / OSINT" image={cheriImg} />
         </div>
       </div>
     </section>
