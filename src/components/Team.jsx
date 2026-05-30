@@ -1,8 +1,8 @@
-import sansynImg from '../assets/sansyn.png';
-import detectiveImg from '../assets/detective.png';
-import npmImg from '../assets/npm.png';
-import ac3Img from '../assets/x23_D_AC3.png';
-import cheriImg from '../assets/cheri.png';
+import sansynImg from '../assets/sansyn.webp';
+import detectiveImg from '../assets/detective.webp';
+import npmImg from '../assets/npm.webp';
+import ac3Img from '../assets/x23_D_AC3.webp';
+import cheriImg from '../assets/cheri.webp';
 
 const WantedCard = ({ name, role, image, bounty, isRoot, isRed }) => (
   <div
@@ -53,6 +53,8 @@ const WantedCard = ({ name, role, image, bounty, isRoot, isRed }) => (
       <img
         src={image}
         alt={name}
+        loading="lazy"
+        decoding="async"
         style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(100%) contrast(1.2)' }}
       />
     </div>
