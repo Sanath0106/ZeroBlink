@@ -49,7 +49,7 @@ const Writeups = () => {
             Accept: 'application/json',
           },
         }).catch(() => {});
-      } catch (err) {
+      } catch {
         // Silent fail
       }
     };
@@ -328,7 +328,7 @@ const Writeups = () => {
 
   // UNLOCKED STATE - Events Table
   return (
-    <section className="container" style={{ padding: '50px 20px', minHeight: '80vh' }}>
+    <section className="container archives-section" style={{ minHeight: '80vh' }}>
       <div
         style={{
           textAlign: 'center',
@@ -372,10 +372,8 @@ const Writeups = () => {
         >
           {/* Table Header */}
           <div
+            className="events-grid events-grid--header"
             style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 80px 180px',
-              padding: '15px 20px',
               backgroundColor: 'rgba(0, 255, 65, 0.1)',
               borderBottom: '1px solid var(--accent-dim)',
               fontWeight: 'bold',
@@ -414,10 +412,8 @@ const Writeups = () => {
 
 const EventRow = ({ event, year, rank }) => (
   <div
+    className="events-grid"
     style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr 80px 180px',
-      padding: '15px 20px',
       borderBottom: '1px solid #222',
       fontFamily: 'var(--font-mono)',
       fontSize: 'clamp(0.75rem, 2vw, 0.95rem)',
@@ -425,7 +421,7 @@ const EventRow = ({ event, year, rank }) => (
   >
     <span style={{ color: '#fff' }}>{event}</span>
     <span style={{ textAlign: 'center', color: '#888' }}>{year}</span>
-    <span style={{ textAlign: 'right', color: 'var(--accent-color)', fontWeight: 'bold', whiteSpace: 'nowrap' }}>{rank}</span>
+    <span className="event-rank" style={{ textAlign: 'right', color: 'var(--accent-color)', fontWeight: 'bold' }}>{rank}</span>
   </div>
 );
 
