@@ -1,14 +1,12 @@
 import { teamMembers } from '../data/team';
 
-const WantedCard = ({ name, role, image, imageLoading, label }) => (
+const WantedCard = ({ name, image, imageLoading }) => (
   <article className="operator-card">
     <div className="operator-card__frame">
-      <img src={image} alt={`${name}, ${role}`} loading={imageLoading} decoding="async" fetchPriority="low" width="560" height="560" />
+      <img src={image} alt={name} loading={imageLoading} decoding="async" fetchPriority="low" width="560" height="560" />
     </div>
     <div className="operator-card__details">
-      <p className="operator-card__label">{label}</p>
       <h3>{name}</h3>
-      <p>{role}</p>
     </div>
   </article>
 );
